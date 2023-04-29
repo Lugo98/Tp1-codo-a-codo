@@ -1,3 +1,12 @@
+:root{
+    --color-1: #2C3333;
+    --color-2: #2E4F4F;
+    --color-3: #0E8388;
+    --color-4: #CBE4DE;
+    --title-font: 'Dancing Script', cursive;
+    --regular-font: 'Comfortaa', cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Barlow', sans-serif;
+    font-family: var(--regular-font);
     color: #2b2b2b;
 }
 
@@ -23,4 +32,7 @@ a {
     height: 900px;
     background: url(../assets/header.jpg) no-repeat center;
     background-size: cover;
+}
+#goldfishclub h1{
+    font-family: var(--title-font);
 }
