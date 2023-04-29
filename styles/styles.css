@@ -13,9 +13,13 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    font-size: 1vw;
     font-family: var(--regular-font);
     color: #2b2b2b;
+}
+
+body{
+    background-color: var(--color-4);
 }
 
 ul, ol{
@@ -24,15 +28,29 @@ ul, ol{
 
 a {
     text-decoration: none ;
+    color: var(--color-4);
 }
 
+img{
+    width: 20vw;
+}
+
+header {
+    background-color: var(--color-1);
+}
 
 #goldfishclub{
-    color: whitesmoke;
-    height: 900px;
+    color: var(--color-4);
+    height: 50vw;
     background: url(../assets/header.jpg) no-repeat center;
     background-size: cover;
 }
-#goldfishclub h1{
+
+h1{
     font-family: var(--title-font);
+    font-size: 400%
+}
+
+footer{
+    background-color: var(--color-1);
 }
