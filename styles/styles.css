@@ -55,14 +55,28 @@ h1{
     font-size: 400%
 }
 #goldfishVarieties{
-    width: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-div{
-    margin: 10px;
+
+#varietiesTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    margin: 5%;
     border: 3px inset var(--color-1);
 }
-div:hover{
-    background-color: var(--color-2);
+
+.flex-item:hover{
+    background-color: var(--color-1);
     color: var(--color-4);
 }
 
@@ -71,6 +85,10 @@ div:hover{
 }
 #moreInfo:hover{
     color:var(--color-3);
+}
+#Farms{
+    background-color: var(--color-1);
+    color: var(--color-4);
 }
 footer{
     background-color: var(--color-1);
