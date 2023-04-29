@@ -35,7 +35,7 @@ a:hover{
 }
 
 img{
-    width: 20vw;
+    width: 25vw;
 }
 
 header {
@@ -73,6 +73,8 @@ h1{
 .flex-item{
     margin: 5%;
     border: 3px inset var(--color-1);
+    width: 30vw;
+    height: 40vw;
 }
 
 .flex-item:hover{
