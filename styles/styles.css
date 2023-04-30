@@ -101,3 +101,11 @@ h1{
 footer{
     background-color: var(--color-1);
 }
+
+@media screen and (max-width: 650px) {
+    #goldfishclub{
+        background: url(../assets/header-mobile.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vw;
+    }
+}
