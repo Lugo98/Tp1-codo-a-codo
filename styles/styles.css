@@ -48,6 +48,9 @@ header {
     height: 50vw;
     background: url(../assets/header.jpg) no-repeat center;
     background-size: cover;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -56,13 +59,15 @@ h1{
 }
 #goldfishVarieties{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 #varietiesTitle{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .flex-conteiner{
@@ -75,6 +80,7 @@ h1{
     border: 3px inset var(--color-1);
     width: 30vw;
     height: 40vw;
+    text-align: left;
 }
 
 .flex-item:hover{
