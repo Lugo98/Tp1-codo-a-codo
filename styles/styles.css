@@ -26,30 +26,25 @@ ul, ol{
     list-style-type: none;
 }
 
-a {
+#navbarNav a {
     text-decoration: none ;
     color: var(--color-4);
 }
 
-a:hover{
+#navbarNav a:hover{
     color: var(--color-3);
 }
 
-.navbar{
-    background-color: var(--color-1);
+#webTitle{
+    font-family: var(--title-font);
 }
 main img{
     width: 25vw;
 }
 
-header {
-    background-color: var(--color-1);
-    color: var(--color-4);
-}
-
 #goldfishclub{
     color: var(--color-4);
-    height: 50vw;
+    height: 40vw;
     background: url(../assets/header.jpg) no-repeat center;
     background-size: cover;
     text-align: left;
