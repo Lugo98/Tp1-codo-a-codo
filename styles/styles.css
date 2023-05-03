@@ -35,7 +35,10 @@ a:hover{
     color: var(--color-3);
 }
 
-img{
+.navbar{
+    background-color: var(--color-1);
+}
+main img{
     width: 25vw;
 }
 
