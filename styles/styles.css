@@ -27,6 +27,10 @@ ul, ol{
     list-style-type: none;
 }
 
+header{
+    background-color: var(--color-1);
+}
+
 #navbarNav a {
     text-decoration: none ;
     color: var(--color-4);
