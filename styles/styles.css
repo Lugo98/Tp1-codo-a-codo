@@ -7,24 +7,13 @@
     --regular-font: 'Comfortaa', cursive;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
 html{
-    font-size: 1vw;
     font-family: var(--regular-font);
     color: #2b2b2b;
 }
 
 body{
     background-color: var(--color-4);
-    
-}
-
-ul, ol{
-    list-style-type: none;
 }
 
 header{
@@ -42,71 +31,4 @@ header{
 
 #webTitle{
     font-family: var(--title-font);
-}
-main img{
-    width: 25vw;
-}
-
-#goldfishclub{
-    color: var(--color-4);
-    height: 40vw;
-    background: url(../assets/header.jpg) no-repeat center;
-    background-size: cover;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    font-family: var(--title-font);
-    font-size: 400%
-}
-
-#goldfishVarieties{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#varietiesTitle{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.flex-conteiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-.flex-item{
-    margin: 5%;
-    border: 3px inset var(--color-1);
-    width: 30vw;
-    height: 40vw;
-    text-align: left;
-}
-
-#moreInfo{
-    color: var(--color-1);
-}
-#moreInfo:hover{
-    color:var(--color-3);
-}
-#Farms{
-    background-color: var(--color-1);
-    color: var(--color-4);
-}
-footer{
-    background-color: var(--color-1);
-}
-
-@media screen and (max-width: 650px) {
-    #goldfishclub{
-        background: url(../assets/header-mobile.jpg) no-repeat center;
-        background-size: cover;
-        height: 100vw;
-    }
 }

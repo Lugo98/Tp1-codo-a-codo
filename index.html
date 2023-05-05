@@ -15,35 +15,53 @@
     </head>
     <body>
         <header class="sticky-top">
-            <nav class="navbar navbar-expand-sm navbar-dark" id="navBar">
-                <div class="container-fluid" id="navbarNav">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" id="webTitle">
-                        <img src="assets/codoacodo.png" alt="Codo a codo logo" width="70">Goldfish Club
-                    </a>
-                    <ol class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#goldfishclub">El Goldfish</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#goldfishVarieties">Variedades</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link"  href="#Farms">Nuestras Granjas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#BecomeFarmer">Vuelvete un criador</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:#00FFCA;">Visita nuestras Granjas</a>
-                      </li>
-                    </ol>
+                        <img src="assets/codoacodo.png" alt="Codo a codo logo" width="70">Goldfish Club</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ol class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#goldfishclub">El Goldfish</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#goldfishVarieties">Variedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="#Farms">Nuestras Granjas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#BecomeFarmer">Vuelvete un criador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color:#00FFCA;">Visita nuestras granjas</a>
+                            </li>
+                        </ol>
+                    </div>    
                   </div>
             </nav>
         </header>
         <main>
-            <section id="goldfishclub" class="container-fluid text-center">
-                <h1>El pez mas popular del mundo</h1>
-                <p>El pez dorado es una de las variedades mas comercializadas a nivel global, nosotros buscamos informar sobre sus cuidados básicos y brindar información para que estos bellos animales tengan la mejor calidad de vida posible</p>
+            <section id="goldfishclub">
+                <div class="card">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/header.jpg" class="w-100" alt="moro">
+                          </div>
+                        </div>
+                    <div class="card-img-overlay">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">El Goldfish</h5>
+                              <p class="card-text">El pez dorado es una de las variedades mas comercializadas a nivel global, nosotros buscamos informar sobre sus cuidados básicos y brindar información para que estos bellos animales tengan la mejor calidad de vida posible</p>
+                              <a href="#BecomeFarmer" class="card-link btn btn-outline-dark">Vuelvete un criador</a>
+                              <a href="#" class="card-link">Visita nuestras granjas</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
             </section>
             <section id="goldfishVarieties">
                 <div id="varietiesTitle">
