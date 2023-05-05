@@ -45,47 +45,56 @@
         <main>
             <section id="goldfishclub">
                 <div class="card">
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./assets/header.jpg" class="w-100" alt="moro">
-                          </div>
-                        </div>
+                    <img src="./assets/header.jpg" class="img-fluid" alt="moro">
                     <div class="card-img-overlay">
-                        <div class="card" style="width: 25rem;">
+                        <div class="card mb-3 grid" id="welcomeCard">
                             <div class="card-body">
-                              <h5 class="card-title text-center">El Goldfish</h5>
+                              <h2 class="card-title text-center">El Goldfish</h2>
                               <p class="card-text">El pez dorado es una de las variedades mas comercializadas a nivel global, nosotros buscamos informar sobre sus cuidados básicos y brindar información para que estos bellos animales tengan la mejor calidad de vida posible</p>
-                              <a href="#BecomeFarmer" class="card-link btn btn-outline-dark">Vuelvete un criador</a>
-                              <a href="#" class="card-link">Visita nuestras granjas</a>
+                              <a href="#BecomeFarmer" class="card-link btn btn-outline-info">Vuelvete un criador</a>
+                              <a href="#" class="card-link btn btn-success">Visita nuestras granjas</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </section>
-            <section id="goldfishVarieties">
-                <div id="varietiesTitle">
-                    <h2>ES INCREIBLEMENTE VARIADO</h2>
+            <section id="goldfishVarieties" class=" row justify-content-center">
+                <div id="varietiesTitle" class="text-center">
+                    <h5>ES INCREIBLEMENTE VARIADO</h5>
                     <p>Estas son solo algunas de las variedades que puedes encontrar en el mercado</p>
                 </div>
-                <div class="flex-conteiner">
-                    <div class="flex-item">
-                        <img src="assets/oranda.jpg" alt="Oranda" class="goldfish">
-                        <h3>Oranda</h3>
-                        <p>Uno de los goldfish más icónicos, lo caracteriza una protuberancia en la cabeza, aleta caudal doble y la precencia de la aleta dorsal, dentro de esta variedad, el patrón mas conocido es el "red cap", haciendo que el capuchón sea de un color rojo brillante y el resto del cuerpo de un blanco metálico puro</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="varietiesCards">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="assets/oranda.jpg" class="card-img-top" alt="Oranda">
+                        <div class="card-body">
+                          <h5 class="card-title">Oranda</h5>
+                          <p class="card-text">Uno de los goldfish más icónicos, lo caracteriza una protuberancia en la cabeza, aleta caudal doble y la precencia de la aleta dorsal, dentro de esta variedad, el patrón mas conocido es el "red cap", haciendo que el capuchón sea de un color rojo brillante y el resto del cuerpo de un blanco metálico puro.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex-item">
-                        <img src="assets/telescopio.jpg" alt="Telescope" class="goldfish">
-                        <h3>Ojos de telescopio</h3>
-                        <p>Como su nombre lo indica, su principal carácteristica son sus prominentes ojos saltones, tiene cuerpo con forma de huevo y aleta caudal doble, los ejemplares mas valorados suelen ser los "moros" que tienen todo su cuerpo de un color negro mate, aunque el de la foto es de un hermoso color blanco puro. Sus nececidades son mas especificas por lo que no se recomienda para principiantes</p>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="assets/telescopio.jpg" class="card-img-top" alt="telescopio">
+                        <div class="card-body">
+                          <h5 class="Telescopio">Card title</h5>
+                          <p class="card-text">Como su nombre lo indica, su principal carácteristica son sus prominentes ojos saltones, tiene cuerpo con forma de huevo y aleta caudal doble, los ejemplares mas valorados suelen ser los "moros" que tienen todo su cuerpo de un color negro mate, aunque el de la foto es de un hermoso color blanco puro. Sus nececidades son mas especificas por lo que no se recomienda para principiantes.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="flex-item">
-                        <img src="assets/shubunkin.jpg" alt="Shubunkin" class="goldfish">
-                        <h3>Shubunkin</h3>
-                        <p>Un pez esbelto de aletas largas, con una sola aleta caudal, caracterizado por la presencia de distintos pigmentos al rededor del cuerpo, predominando el azul, blanco y negro, se dice que cuanto mayor sea la pigmentación negra, mas valor obtiene el pez. Al tener una sola aleta caudal es de nado rápido por lo que no se recomienda juntarlo con peces de cuerpo redondo. Son mas resitentes a los cambios ambientales por lo que son ejemplares perfectos para el estanque</p>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="assets/shubunkin.jpg" class="card-img-top" alt="shubunkin">
+                        <div class="card-body">
+                          <h5 class="card-title">Shubunkin</h5>
+                          <p class="card-text">Un pez esbelto de aletas largas, con una sola aleta caudal, caracterizado por la presencia de distintos pigmentos al rededor del cuerpo, predominando el azul, blanco y negro, se dice que cuanto mayor sea la pigmentación negra, mas valor obtiene el pez. Al tener una sola aleta caudal es de nado rápido por lo que no se recomienda juntarlo con peces de cuerpo redondo. Son mas resitentes a los cambios ambientales por lo que son ejemplares perfectos para el estanque.</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <a href="http://www.tarracogoldfish.com/peces-tarragona/agua-dulce-fria/tipos-goldfish/" target="_blank" id="moreInfo">Ver mas variedades</a>
+                  </div>
+                  <div class="text-center" id="moreInfo">
+                      <a href="http://www.tarracogoldfish.com/peces-tarragona/agua-dulce-fria/tipos-goldfish/" target="_blank" class="btn btn-outline-secondary">Ver mas variedades</a>
+                  </div>
             </section>
             <section id="Farms">
                 <img src="assets/granja1.jpg" alt="Granja de goldfish">

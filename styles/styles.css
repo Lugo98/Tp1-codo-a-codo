@@ -32,3 +32,28 @@ header{
 #webTitle{
     font-family: var(--title-font);
 }
+
+#welcomeCard{
+    width: 80%;
+    max-width: 600px;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    grid-row: 2;
+}
+
+#welcomeCard h2{
+    font-family: var(--title-font);
+}
+
+#varietiesCards{
+    width: 100rem;
+}
+#varietiesCards .card{
+    background-color: var(--color-4);
+}
+
+
+#moreInfo{
+   margin: 3rem ;
+}
