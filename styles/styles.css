@@ -38,7 +38,7 @@ header{
     max-width: 600px;
     border: 0;
     background-color: rgba(0,0,0,0);
-    color: white;
+    color: var(--color-4);
 }
 
 #welcomeCard h2{
@@ -67,11 +67,23 @@ header{
 }
 
 #farmsCard{
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     color: var(--color-4);
     border-radius: 0;
 }
 
 .formItem{
     margin-bottom: 1rem;
+}
+
+footer{
+    background-color: var(--color-2);
+}
+
+.footerItem{
+    color: var(--color-4);
+}
+
+.footerItem:hover{
+    color: var(--color-3);
 }
