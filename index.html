@@ -18,7 +18,7 @@
             <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" target="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/" id="webTitle">
-                        <img src="assets/codoacodo.png" alt="Codo a codo logo" width="70">Goldfish Club</a>
+                    <img src="assets/codoacodo.png" alt="Codo a codo logo" width="70">Goldfish Club</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ol class="navbar-nav">
@@ -29,7 +29,7 @@
                                 <a class="nav-link" href="#goldfishVarieties">Variedades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  href="#Farms">Nuestras Granjas</a>
+                                <a class="nav-link"  href="#farms">Nuestras Granjas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#BecomeFarmer">Vuelvete un criador</a>
@@ -43,10 +43,11 @@
             </nav>
         </header>
         <main>
-            <section id="goldfishclub">
+            <section id="goldfishclub" class="position-relative">
                 <div class="card">
+                        <!-- <img src="./assets/header-mobile.jpg" alt="moro" class="small"> -->                   
                     <img src="./assets/header.jpg" class="img-fluid" alt="moro">
-                    <div class="card-img-overlay">
+                    <div class="card-img-overlay position-absolute top-50">
                         <div class="card mb-3 grid" id="welcomeCard">
                             <div class="card-body">
                               <h2 class="card-title text-center">El Goldfish</h2>
@@ -96,16 +97,52 @@
                       <a href="http://www.tarracogoldfish.com/peces-tarragona/agua-dulce-fria/tipos-goldfish/" target="_blank" class="btn btn-outline-secondary">Ver mas variedades</a>
                   </div>
             </section>
-            <section id="Farms">
-                <img src="assets/granja1.jpg" alt="Granja de goldfish">
-                <h2>Nuestras granjas</h2>
-                <p>Nuestras granjas se encuentran al rededor de toda latinoamerica, para ser parte de nuestro club se deben respetar las buenas prácticas de cria para minimizar el estres en los peces, para formar parte no importa el tamaño de tu granja, puede ser indoor o al aire libre, lo importante es que respetes a los peces y sus necesidades de cria y cuidados. Visita la granja mas cercana!</p>
+            <section id="farms">
+                <div class="card mb-3"  id="farmsCard">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./assets/granja1.jpg" class="d-block w-100 img-fluid" alt="granja">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/granja2.jpg" class="d-block w-100 img-fluid" alt="granja2">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/granja3.jpg" class="d-block w-100 img-fluid" alt="granja3">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./assets/granja4.jpg" class="d-block w-100 img-fluid" alt="granja4">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Nuestras granjas</h5>
+                          <p class="card-text">Nuestras granjas se encuentran al rededor de toda latinoamerica, para ser parte de nuestro club se deben respetar las buenas prácticas de cria para minimizar el estres en los peces, para formar parte no importa el tamaño de tu granja, puede ser indoor o al aire libre, lo importante es que respetes a los peces y sus necesidades de cria y cuidados. ¡Visita la granja mas cercana!</p>
+                          <a href="#" class="btn btn-success">Visita nuestras granjas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </section>
-            <section id="BecomeFarmer">
-                <h2>Vuelvete un criador</h2>
-                <p>Si cumples los requisitos, puedes formar parte de nuestro club!</p>
-                <form action="" method="get">
-                    <label for="name">Nombre</label>
+            <section id="becomeFarmer">
+                <div class="text-center">
+                    <h5>Vuelvete un criador</h5>
+                    <p>Si cumples los requisitos, puedes formar parte de nuestro club!</p>
+                </div>
+                <form action="" method="get" class="container-md">
+                    <!-- <label for="name">Nombre</label>
                     <input type="text" name="name" id="name" required placeholder="Nombre">
                     <label for="lastname">Apellido</label>
                     <input type="text" name="lastname" id="lastname" required placeholder="Apellido">
@@ -113,7 +150,24 @@
                     <input type="email" name="mail" id="mail" required placeholder="example@email.com">
                     <label for="farm">Hablanos sobre tu granja</label>
                     <textarea name="farm" id="farm" placeholder="Variedades que crias y tamaño de la granja"></textarea>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar"> -->
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="formItem nameLastname form-control" placeholder="Nombre" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="formItem nameLastname form-control" placeholder="Apellido" aria-label="Last name">
+                        </div>
+                        <div>
+                            <input type="email" class="formItem form-control form-control-lg" id="colFormLabelLg" placeholder="E-mail" id="e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Hablanos sobre tu granja (Tamaño, variedades que crias, etc.)" aria-labelledby="textHelper" id="textArea"></textarea>
+                            <div id="textHelper" class="form-text">
+                                Recuerda colocar la ubicación de tu granja
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </section>
         </main>

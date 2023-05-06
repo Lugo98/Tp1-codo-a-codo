@@ -34,20 +34,26 @@ header{
 }
 
 #welcomeCard{
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     border: 0;
     background-color: rgba(0,0,0,0);
     color: white;
-    grid-row: 2;
 }
 
 #welcomeCard h2{
     font-family: var(--title-font);
 }
+#varietiesTitle{
+    margin-bottom: 0;
+}
+#varietiesTitle p{
+    margin-bottom: 0;
+}
 
 #varietiesCards{
     width: 100rem;
+    margin-top: 0;
 }
 #varietiesCards .card{
     background-color: var(--color-4);
@@ -56,4 +62,16 @@ header{
 
 #moreInfo{
    margin: 3rem ;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+}
+
+#farmsCard{
+    background-color: var(--color-1);
+    color: var(--color-4);
+    border-radius: 0;
+}
+
+.formItem{
+    margin-bottom: 1rem;
 }
