@@ -33,7 +33,13 @@ header{
     font-family: var(--title-font);
 }
 
-#welcomeCard{
+#goldfishclub{
+    height: 95vh;
+    background-image: url(../assets/header.jpg);
+    background-position: 63%;
+}
+
+.welcomeCard{
     width: 90%;
     max-width: 600px;
     border: 0;
@@ -63,10 +69,8 @@ header{
 }
 
 #moreInfo{
-   margin-left: 3rem;
    margin-top: 1rem;
    margin-bottom: 2rem;
-   padding: 0;
 }
 
 #farmsCard{
