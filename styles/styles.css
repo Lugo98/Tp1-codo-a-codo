@@ -36,6 +36,7 @@ header{
 #goldfishclub{
     height: 93vh;
     background-image: url(../assets/header.jpg);
+    background-size: cover;
     background-position: 59%;
     background-repeat: no-repeat;
 }
