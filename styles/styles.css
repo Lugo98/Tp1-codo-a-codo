@@ -61,9 +61,6 @@ header{
 #varietiesCards .card{
     background-color: var(--color-4);
 }
-#shubunkin{
-    padding-right: 0;
-}
 
 #moreInfo{
    margin-left: 3rem;
