@@ -1,8 +1,8 @@
 :root{
-    --color-1: #2C3333;
-    --color-2: #2E4F4F;
-    --color-3: #0E8388;
-    --color-4: #CBE4DE;
+    --color-1: #212A3E;
+    --color-2: #394867;
+    --color-3: #9BA4B5;
+    --color-4: #F1F6F9;
     --title-font: 'Dancing Script', cursive;
     --regular-font: 'Comfortaa', cursive;
 }
@@ -46,24 +46,30 @@ header{
 }
 #varietiesTitle{
     margin-bottom: 0;
+    padding-right: 0;
 }
 #varietiesTitle p{
     margin-bottom: 0;
 }
 
 #varietiesCards{
-    width: 100rem;
+    width: 90%;
     margin-top: 0;
+    margin-right: 0;
+    padding-right: 0;
 }
 #varietiesCards .card{
     background-color: var(--color-4);
 }
-
+#shubunkin{
+    padding-right: 0;
+}
 
 #moreInfo{
-   margin: 3rem ;
+   margin-left: 3rem;
    margin-top: 1rem;
    margin-bottom: 2rem;
+   padding: 0;
 }
 
 #farmsCard{
@@ -86,4 +92,13 @@ footer{
 
 .footerItem:hover{
     color: var(--color-3);
+}
+
+.selectButton{
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+.selectButton:hover{
+    background-color: var(--color-3);
 }

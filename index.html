@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
         <title>Goldfish Club</title>
     </head>
-    <body>
+    <body class="container-fluid m-0 p-0">
         <header class="sticky-top">
             <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container-fluid">
@@ -53,24 +53,33 @@
                               <h2 class="card-title text-center">El Goldfish</h2>
                               <p class="card-text">El pez dorado es una de las variedades mas comercializadas a nivel global, nosotros buscamos informar sobre sus cuidados básicos y brindar información para que estos bellos animales tengan la mejor calidad de vida posible</p>
                               <a href="#BecomeFarmer" class="card-link btn btn-outline-info">Vuelvete un criador</a>
-                              <a href="#" class="card-link btn btn-success">Visita nuestras granjas</a>
+                              <a href="#" class="card-link btn selectButton">Visita nuestras granjas</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="goldfishVarieties" class=" row justify-content-center">
+            <section id="goldfishVarieties">
                 <div id="varietiesTitle" class="text-center">
                     <h5>ES INCREIBLEMENTE VARIADO</h5>
                     <p>Estas son solo algunas de las variedades que puedes encontrar en el mercado</p>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4" id="varietiesCards">
+                <div class="row row-cols-1 row-cols-md-3 g-4 m-auto" id="varietiesCards">
                     <div class="col">
                       <div class="card h-100">
                         <img src="assets/oranda.jpg" class="card-img-top" alt="Oranda">
                         <div class="card-body">
                           <h5 class="card-title">Oranda</h5>
                           <p class="card-text">Uno de los goldfish más icónicos, lo caracteriza una protuberancia en la cabeza, aleta caudal doble y la precencia de la aleta dorsal, dentro de esta variedad, el patrón mas conocido es el "red cap", haciendo que el capuchón sea de un color rojo brillante y el resto del cuerpo de un blanco metálico puro.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" id="shubunkin">
+                      <div class="card h-100">
+                        <img src="assets/shubunkin.jpg" class="card-img-top" alt="shubunkin">
+                        <div class="card-body">
+                          <h5 class="card-title">Shubunkin</h5>
+                          <p class="card-text">Un pez esbelto de aletas largas, con una sola aleta caudal, caracterizado por la presencia de distintos pigmentos al rededor del cuerpo, predominando el azul, blanco y negro, se dice que cuanto mayor sea la pigmentación negra, mas valor obtiene el pez. Al tener una sola aleta caudal es de nado rápido por lo que no se recomienda juntarlo con peces de cuerpo redondo. Son mas resitentes a los cambios ambientales por lo que son ejemplares perfectos para el estanque.</p>
                         </div>
                       </div>
                     </div>
@@ -83,19 +92,10 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="assets/shubunkin.jpg" class="card-img-top" alt="shubunkin">
-                        <div class="card-body">
-                          <h5 class="card-title">Shubunkin</h5>
-                          <p class="card-text">Un pez esbelto de aletas largas, con una sola aleta caudal, caracterizado por la presencia de distintos pigmentos al rededor del cuerpo, predominando el azul, blanco y negro, se dice que cuanto mayor sea la pigmentación negra, mas valor obtiene el pez. Al tener una sola aleta caudal es de nado rápido por lo que no se recomienda juntarlo con peces de cuerpo redondo. Son mas resitentes a los cambios ambientales por lo que son ejemplares perfectos para el estanque.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                </div>
                   <div class="text-center" id="moreInfo">
                       <a href="http://www.tarracogoldfish.com/peces-tarragona/agua-dulce-fria/tipos-goldfish/" target="_blank" class="btn btn-outline-secondary">Ver mas variedades</a>
-                  </div>
+                  </div> 
             </section>
             <section id="farms">
                 <div class="card mb-3"  id="farmsCard">
@@ -130,7 +130,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Nuestras granjas</h5>
                           <p class="card-text">Nuestras granjas se encuentran al rededor de toda latinoamerica, para ser parte de nuestro club se deben respetar las buenas prácticas de cria para minimizar el estres en los peces, para formar parte no importa el tamaño de tu granja, puede ser indoor o al aire libre, lo importante es que respetes a los peces y sus necesidades de cria y cuidados. ¡Visita la granja mas cercana!</p>
-                          <a href="#" class="btn btn-success">Visita nuestras granjas</a>
+                          <a href="#" class="btn selectButton">Visita nuestras granjas</a>
                         </div>
                       </div>
                     </div>
@@ -158,7 +158,7 @@
                                 Recuerda colocar la ubicación de tu granja
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-success" type="submit">Enviar</button>
+                                <button class="btn selectButton" type="submit">Enviar</button>
                               </div>
                         </div>
                     </div>
