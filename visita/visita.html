@@ -84,10 +84,23 @@
                     <div>
                         <input type="email" class="formItem form-control form-control-lg" id="colFormLabelLg" placeholder="E-mail" id="e-mail">
                     </div>
-                    <div class="mb-3">
-                        <div class="d-grid gap-2">
-                            <button class="btn selectButton" type="submit">Enviar</button>
-                          </div>
+                    <div class="mb-3 d-flex">                    
+                        <div class="col me-1">
+                            <input type="number" class="formItem form-control" placeholder="cantidad" aria-label="cuantity">
+                        </div> 
+                        <div class="col ms-1">
+                            <select class="form-select formItem" aria-label="Farm">
+                                <option selected>Granja</option>
+                                <option value="1">Granja de Orandas</option>
+                                <option value="2">Granja de Shubunkins</option>
+                                <option value="3">Granja de Telescopios</option>
+                                <option value="4">Granja mixta</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                            <button type="button" class="col btn selectButton btn-lg me-1" type="reset">Borrar</button>
+                            <button type="button" class="col btn selectButton btn-lg ms-1" type="submit">Resumen</button>
                     </div>
                 </div>
             </form>
