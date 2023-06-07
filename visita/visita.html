@@ -38,43 +38,52 @@
                             <a class="nav-link" href="#" style="color:#00FFCA;">Visita nuestras granjas</a>
                         </li>
                     </ol>
-                </div>    
+                </div>
               </div>
         </nav>
     </header>
-    <main class="m-auto"> 
-        <section>
-            <div class="row row-cols-1 row-cols-md-6 g-3 mx-auto mt-2 mb-3 justify-content-center">
-                <div class="col text-center">
-                  <div class="card h-100 discountCard py-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Educativo</h5>
-                      <p class="card-text">Tiene un descuento</p>
-                      <h5 class="card-text">50%</h5>
-                      <small class="card-text text-body-secondary">*presentar documentación</small>
+    <main class="m-auto">
+        <section id="cardsSection">
+                <div class="row row-cols-1 row-cols-md-6 g-3 mx-auto mt-2 mb-3 justify-content-center">
+                    <label for="education">   
+                        <div class="col text-center">
+                            <div class="card h-100 discountCard py-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Educativo</h5>
+                                    <p class="card-text">Tiene un descuento</p>
+                                    <h5 class="card-text">50%</h5>
+                                    <small class="card-text text-body-secondary">*presentar documentación</small>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="radio" name="discount" id="education">
+                    </label>
+                <label for="client">
+                    <div class="col text-center">
+                        <div class="card h-100 discountCard py-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Cliente</h5>
+                                <p class="card-text">Tiene un descuento</p>
+                                <h5 class="card-text">30%</h5>
+                                <small class="card-text text-body-secondary">*presentar documentación</small>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col text-center">
-                  <div class="card h-100 discountCard py-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Cliente</h5>
-                      <p class="card-text">Tiene un descuento</p>
-                      <h5 class="card-text">30%</h5>
-                      <small class="card-text text-body-secondary">*presentar documentación</small>
+                    <input type="radio" name="discount" id="client">
+                </label>
+                <label for="member">
+                    <div class="col text-center">
+                        <div class="card h-100 discountCard py-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Miembro</h5>
+                                <p class="card-text">Tiene un descuento</p>
+                                <h5 class="card-text">75%</h5>
+                                <small class="card-text text-body-secondary">*presentar documentación</small>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col text-center">
-                  <div class="card h-100 discountCard py-3">
-                    <div class="card-body">
-                      <h5 class="card-title">Miembro</h5>
-                      <p class="card-text">Tiene un descuento</p>
-                      <h5 class="card-text">75%</h5>
-                      <small class="card-text text-body-secondary">*presentar documentación</small>
-                    </div>
-                  </div>
-                </div>
+                        <input type="radio" name="discount" id="member">
+                </label>
             </div>
             <p class="text-center text-body-tertiary">Si desea hacer una compra al por mayor, deberá contactarse directamente con las granjas.</p>
         </section>
@@ -94,10 +103,10 @@
                     <div>
                         <input type="email" class="formItem form-control form-control-lg" id="colFormLabelLg" placeholder="E-mail" id="e-mail">
                     </div>
-                    <div class="mb-3 d-flex">                    
+                    <div class="mb-3 d-flex">
                         <div class="col me-1">
                             <input type="number" class="formItem form-control" placeholder="cantidad" aria-label="cuantity">
-                        </div> 
+                        </div>
                         <div class="col ms-1">
                             <select class="form-select formItem" aria-label="Farm">
                                 <option selected>Granja</option>
@@ -120,7 +129,7 @@
         </section>
     </main>
         <footer class="navbar navbar-expand-lg navbar-dark mt-auto">
-            <div class="container-fluid row" id="footer">    
+            <div class="container-fluid row" id="footer">
                 <ul class="navbar-nav text-start text-lg-center m-3 m-lg-0" id="footerNav">
                     <li class="nav-item col">
                         <a class="footerItem nav-link" href="#">Preguntas frecuentes</a>

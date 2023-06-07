@@ -109,10 +109,13 @@ footer{
 .selectButton:hover{
     background-color: var(--color-3);
 }
-
+#cardsSection input{
+    display: none;
+}
 .discountCard:hover{
     background-color: var(--color-3);
 }
+
 
 #total{
     background-color: var(--color-3);
