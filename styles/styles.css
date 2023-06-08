@@ -110,9 +110,9 @@ footer{
     background-color: var(--color-3);
 }
 
-/* #cardsSection input{
+#cardsSection input{
     display: none;
-} */
+}
 
 .discountCard:hover{
     background-color: var(--color-3);
