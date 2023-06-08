@@ -37,6 +37,10 @@ function selectingCard(){
     }
 }
 
+function hoverCard(){
+    studentsCard.style.background = "white"
+}
+
 function deselection(){
     studentsCard.style.background = "white"
     studentsCard.style.color      = "black"
@@ -48,6 +52,6 @@ function deselection(){
 }
 
 for(const radioButton of discountInputs){
-    radioButton.addEventListener('change', selectingCard);
-    resetButton.addEventListener('click', deselection)
+    radioButton.addEventListener('change', selectingCard);    
 }
+resetButton.addEventListener('click', deselection)
