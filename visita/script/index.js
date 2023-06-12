@@ -90,7 +90,7 @@ function resumeSpanWriting(){
     }
 }
 
-function deselection(){
+function resetingAll(){
     studentsCard.style.background = "white"
     studentsCard.style.color      = "black"
     clientsCard.style.background  = "white"
@@ -110,5 +110,5 @@ for(const input of discountInputs){
     input.addEventListener('change', selectingCard);    
 }
 farm.addEventListener('change', priceSelection)
-resetButton.addEventListener('click', deselection)
+resetButton.addEventListener('click', resetingAll)
 submitButton.addEventListener('click', resumeCalculation)
