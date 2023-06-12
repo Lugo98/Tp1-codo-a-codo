@@ -1,3 +1,5 @@
+let form = document.getElementById('farmForm')
+let farm = form.farms
 const discountInputs        = document.querySelectorAll('input[name="discount"]');
 const discountStudentsInput = document.getElementById('education')
 const discountClientInput   = document.getElementById('client')
@@ -9,6 +11,14 @@ const membersCard   = document.getElementById('memberCard')
 const discountCards = document.getElementsByClassName('discountCard')
 
 const resetButton = document.getElementById('resetBtn')
+const submitButton = document.getElementById('submitBtn')
+
+let ticketQuantity = document.getElementById('ticketQuantity')
+let priceSpan = document.getElementById('price')
+let resumeSpan = document.getElementById('resume')
+let discount = 1
+let price
+let resume
 
 function selectingCard(){
 
@@ -35,10 +45,49 @@ function selectingCard(){
         membersCard.style.background = "white"
         membersCard.style.color      = "black"
     }
+    
+    discountSelection()
 }
 
-function hoverCard(){
-    studentsCard.style.background = "white"
+function discountSelection(){
+    if (discountStudentsInput.checked){
+        discount = 0.5
+    }
+    if (discountClientInput.checked){
+        discount = 0.7
+    }
+    if (discountMemberInput.checked){
+        discount = 0.25
+    }
+}
+
+function priceSelection(){
+    price = this.value
+    spanPriceWriting()
+}
+
+function spanPriceWriting(){
+    priceSpan.textContent = "$" + price
+    
+    if(price == 0){
+        priceSpan.textContent= "-"
+    }
+}
+
+function resumeCalculation(){    
+    resume = (ticketQuantity.value * price) * discount
+    
+    resumeSpanWriting()
+}
+
+function resumeSpanWriting(){
+    resumeSpan.textContent = "$" + resume
+    if(discountStudentsInput.checked && ticketQuantity.value < 10){
+        resumeSpan.textContent = "Para el descuento de estudiantes se deben comprar al menos 10 tickets"
+    }
+    if(resume == 0 || ticketQuantity.value == ""){
+        resumeSpan.textContent = "Por favor seleccione una granja y cantidad de tickets"
+    }
 }
 
 function deselection(){
@@ -48,10 +97,18 @@ function deselection(){
     clientsCard.style.color       = "black"
     membersCard.style.background  = "white"
     membersCard.style.color       = "black"
+    
+    discount = 1
+    price = 0
 
+    priceSpan.textContent = "-"
+    resumeSpan.textContent = "-"
 }
 
-for(const radioButton of discountInputs){
-    radioButton.addEventListener('change', selectingCard);    
+
+for(const input of discountInputs){
+    input.addEventListener('change', selectingCard);    
 }
+farm.addEventListener('change', priceSelection)
 resetButton.addEventListener('click', deselection)
+submitButton.addEventListener('click', resumeCalculation)
