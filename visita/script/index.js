@@ -1,3 +1,4 @@
+'use strict'
 let form = document.getElementById('farmForm')
 let farm = form.farms
 const discountInputs        = document.querySelectorAll('input[name="discount"]');
